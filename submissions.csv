@@ -1,0 +1,265 @@
+id,title
+478,Gentle Manipulation of Tree Branches: A Contact-Aware Policy Learning Approach
+485,"Sparse Diffusion Policy:  A Sparse, Reusable, and Flexible Policy for Robot Learning"
+711,LeLaN: Learning A Language-conditioned Navigation Policy from In-the-Wild Video
+585,Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress
+599,Vocal Sandbox: Continual Learning and Adaptation for Situated Human-Robot Collaboration
+171,Theia: Distilling Diverse Vision Foundation Models for Robot Learning
+211,Language-guided Manipulator Motion Planning with Bounded Task Space
+233,Gaitor: Learning a Unified Representation Across Gaits for Real-World Quadruped Locomotion
+356,Robust Manipulation Primitive Learning via Domain Contraction
+74,MILES: Making Imitation Learning Easy with Self-Supervision
+261,OCCAM: Online Continuous Controller Adaptation with Meta-Learned Models
+461,Discovering Robotic Interaction Modes with Discrete Representation Learning
+166,Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation
+272,RoboGolf: Mastering Real-World Minigolf with a Reflective Multi-Modality Vision-Language Model
+183,RobotKeyframing: Learning Locomotion with High-Level Objectives via Mixture of Dense and Sparse Rewards
+633,HiRT: Enhancing Robotic Control with Hierarchical  Robot Transformers
+231,ManiWAV: Learning Robot Manipulation from In-the-Wild Audio-Visual Data
+321,Bi-Level Motion Imitation for Humanoid Robots
+334,Equivariant Diffusion Policy
+687,Learning Robotic Manipulation Policies from Point Clouds with Conditional Flow Matching
+357,Jacta: A Versatile Planner for Learning Dexterous and Whole-body Manipulation
+540,Learning Decentralized Multi-Biped Control for Payload Transport
+659,Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild
+475,EquiBot: SIM(3)-Equivariant Diffusion Policy for Generalizable and Data Efficient Learning
+188,Gaussian Splatting to Real World Flight Navigation Transfer with Liquid Networks
+295,Learning H-Infinity Locomotion Control
+30,Real-to-Sim Grasp: Rethinking the Gap between Simulation and Real World in Grasp Detection
+200,A Dual Approach to Imitation Learning from Observations with Offline Datasets
+152,EXTRACT: Efficient Policy Learning by Extracting Transferable Robot Skills from Offline Data
+323,RT-Sketch: Goal-Conditioned Imitation Learning from Hand-Drawn Sketches
+512,View-Invariant Policy Learning via Zero-Shot Novel View Synthesis
+372,"PianoMime: Learning a Generalist, Dexterous Piano Player from Internet Demonstrations"
+631,Exploring Under Constraints with Model-Based Actor-Critic and Safety Filters
+257,Generalizing End-To-End Autonomous Driving In Real-World Environments Using Zero-Shot LLMs
+577,Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction
+180,Non-rigid Relative Placement through 3D Dense Diffusion
+523,DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies
+434,NOD-TAMP: Generalizable Long-Horizon Planning with Neural Object Descriptors
+338,SELFI: Autonomous Self-Improvement with RL for Vision-Based Navigation around People
+491,Toward General Object-level Mapping from Sparse Views with 3D Diffusion Priors
+237,Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction
+203,Control with Patterns: A D-learning Method
+698,Policy Adaptation via Language Optimization: Decomposing Tasks for Few-Shot Imitation
+309,Modeling the Real World with High-Density Visual Particle Dynamics
+26,GraspSplats: Efficient Manipulation with 3D Feature Splatting
+282,Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph
+563,SoftManiSim: A Fast Simulation Framework for Multi-Segment Continuum Manipulators Tailored for Robot Learning
+402,Learning Visuotactile Estimation and Control for Non-prehensile Manipulation under Occlusions
+303,OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning
+178,General Flow as Foundation Affordance for Scalable Robot Learning
+366,DiffuseLoco: Real-Time Legged Locomotion Control with Diffusion from Offline Datasets
+621,APRICOT: Active Preference Learning and Constraint-Aware Task Planning with LLMs
+387,HYPERmotion: Learning Hybrid Behavior Planning for Autonomous Loco-manipulation
+229,A3VLM: Actionable Articulation-Aware Vision Language Model
+72,Differentiable Robot Rendering
+52,TRANSIC: Sim-to-Real Policy Transfer by Learning from Online Correction
+552,InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation
+304,Goal-Reaching Policy Learning from Non-Expert Observations via Effective Subgoal Guidance
+53,Q-SLAM: Quadric Representations for Monocular SLAM
+377,ClutterGen: A Cluttered Scene Generator for Robot Learning
+253,Verification of Neural Control Barrier Functions with Symbolic Derivative Bounds Propagation
+8,Learning to Manipulate Anywhere: A Visual Generalizable Framework For Reinforcement Learning
+427,Region-aware Grasp Framework with Normalized Grasp Space for Efficient 6-DoF Grasping
+614,Dynamic 3D Gaussian Tracking for Graph-Based Neural Dynamics Modeling
+626,I Can Tell What I am Doing: Toward Real-World Natural Language Grounding of Robot Experiences
+574,Task-Oriented Hierarchical Object Decomposition for Visuomotor Control
+447,ALOHA Unleashed: A Simple Recipe for Robot Dexterity
+314,Avoid Everything: Model-Free Collision Avoidance with Expert-Guided Fine-Tuning
+457,3D Diffuser Actor: Policy Diffusion with 3D Scene Representations
+273,Humanoid Parkour Learning
+195,Learning Compositional Behaviors from Demonstration and Language
+611,Surgical Robot Transformer (SRT): Imitation Learning for Surgical Tasks
+634,ReMix: Optimizing Data Mixtures for Large Scale Imitation Learning
+575,VIRL: Self-Supervised Visual Graph Inverse Reinforcement Learning
+276,InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment
+95,Learning Robot Soccer from Egocentric Vision with Deep Reinforcement Learning
+717,Learning to Walk from Three Minutes of Real-World Data with Semi-structured Dynamics Models
+113,Shelf-Supervised Cross-Modal Pre-Training for 3D Object Detection
+236,Large Scale Mapping of Indoor Magnetic Field by Local and Sparse Gaussian Processes
+414,Tag Map: A Text-Based Map for Spatial Reasoning and Navigation with Large Language Models
+345,Solving Offline Reinforcement Learning with Decision Tree Regression
+119,RiEMann: Near Real-Time SE(3)-Equivariant Robot Manipulation without Point Cloud Segmentation
+144,Reinforcement Learning with Foundation Priors: Let Embodied Agent Efficiently Learn on Its Own
+339,TLDR: Unsupervised Goal-Conditioned RL via Temporal Distance-Aware Representations
+524,Contrast Sets for Evaluating Language-Guided Robot Policies
+480,MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking
+415,Meta-Control: Automatic Model-based Control Synthesis for Heterogeneous Robot Skills
+628,"SPIRE: Synergistic Planning, Imitation, and Reinforcement Learning for Long-Horizon Manipulation"
+149,OPEN TEACH: A Versatile Teleoperation System for Robotic Manipulation
+100,RoVi-Aug: Robot and Viewpoint Augmentation for Cross-Embodiment Robot Learning
+58,Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents
+132,Generative Image as Action Models
+435,OrbitGrasp: SE(3)-Equivariant Grasp Learning
+12,Visual Whole-Body Control for Legged Loco-Manipulation
+238,Flow as the Cross-domain Manipulation Interface
+47,Learning Visual Parkour from Generated Images
+470,Perceive With Confidence: Statistical Safety Assurances for Navigation with Learning-Based Perception
+690,Bootstrapping Reinforcement Learning with Imitation for Vision-Based Agile Flight
+170,3D-ViTac: Learning Fine-Grained Manipulation with Visuo-Tactile Sensing
+379,Rate-Informed Discovery via Bayesian Adaptive Multifidelity Sampling
+417,Dreaming to Assist: Learning to Align with Human Objectives for Shared Control in High-Speed Racing
+283,Conformal Prediction for Semantically-Aware Autonomous Perception in Urban Environments
+350,"Bridging the gap between Learning-to-plan, Motion Primitives and Safe Reinforcement Learning"
+671,OpenVLA: An Open-Source Vision-Language-Action Model
+71,Scaling Manipulation Learning with Visual Kinematic Chain Prediction
+36,Open-TeleVision: Teleoperation with Immersive Active Visual Feedback
+271,SkillMimicGen: Automated Demonstration Generation for Efficient Skill Learning and Deployment
+643,So You Think You Can Scale Up Autonomous Robot Data Collection?
+581,Learning Quadruped Locomotion Using Differentiable Simulation
+353,Multi-Transmotion: Pre-trained Model for Human Motion Prediction
+7,HumanPlus: Humanoid Shadowing and Imitation from Humans
+429,Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision
+133,Continuous Control with Coarse-to-fine Reinforcement Learning
+56,Let Occ Flow: Self-Supervised 3D Occupancy Flow Prediction
+340,Learning to Open and Traverse Doors with a Legged Manipulator
+277,Legolas: Deep Leg-Inertial Odometry
+118,Implicit Grasp Diffusion: Bridging the Gap between Dense Prediction and Sampling-based Grasping
+294,DexCatch:  Learning to Catch Arbitrary Objects with Dexterous Hands
+160,Sim-to-Real Transfer via 3D Feature Fields for Vision-and-Language Navigation
+212,Differentiable Discrete Elastic Rods for Real-Time Modeling of Deformable Linear Objects
+445,D$^3$Fields: Dynamic 3D Descriptor Fields for Zero-Shot Generalizable Rearrangement
+497,Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions
+644,OKAMI: Teaching Humanoid Robots Manipulation Skills through Single Video Imitation
+192,RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation
+79,FetchBench: A Simulation Benchmark for Robot Fetching
+262,Structured Bayesian Meta-Learning for Data-Efficient Visual-Tactile Model Estimation
+186,TieBot: Learning to Knot a Tie from Visual Demonstration through a Real-to-Sim-to-Real Approach
+713,An Open-Source Soft Robotic Platform for Autonomous Aerial Manipulation in the Wild
+239,JA-TN: Pick-and-Place Towel Shaping from Crumpled States based on TransporterNet with Joint-Probability Action Inference
+158,Lessons from Learning to Spin “Pens”
+86,Autonomous Interactive Correction MLLM for Robust Robotic Manipulation
+692,Robotic Control via Embodied Chain-of-Thought Reasoning
+22,DextrAH-G: Pixels-to-Action Dexterous Arm-Hand Grasping with Geometric Fabrics
+228,SLR: Learning Quadruped Locomotion without Privileged Information
+153,Learning Granular Media Avalanche Behavior for Indirectly Manipulating Obstacles on a Granular Slope
+210,Task Success Prediction for Open-Vocabulary Manipulation Based on Multi-Level Aligned Representations
+618,Leveraging Locality to Boost Sample Efficiency in Robotic Manipulation
+630,Progressive Multi-Modal Fusion for Robust 3D Object Detection
+715,Towards Open-World Grasping with Large Vision-Language Models
+34,LLARVA: Vision-Action Instruction Tuning Enhances Robot Learning
+376,One Policy to Run Them All: an End-to-end Learning Approach to Multi-Embodiment Locomotion
+583,"ScissorBot: Learning Generalizable Scissor Skill for Paper Cutting via Simulation, Imitation, and Sim2Real"
+284,JointMotion: Joint Self-Supervision for Joint Motion Prediction
+728,Body Transformer: Leveraging Robot Embodiment for Policy Learning
+422,Adaptive Language-Guided Abstraction from Contrastive Explanations
+661,Adapting Humanoid Locomotion over Challenging Terrain via Two-Phase Training
+147,"TOP-Nav: Legged Navigation Integrating Terrain, Obstacle and Proprioception Estimation"
+579,RoboKoop: Efficient Control Conditioned Representations from Visual Input in Robotics using Koopman Operator
+522,Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation
+156,Play to the Score: Stage-Guided Dynamic Multi-Sensory Fusion for Robotic Manipulation
+486,Scaling Safe Multi-Agent Control for Signal Temporal Logic Specifications
+515,SHADOW: Leveraging Segmentation Masks for Cross-Embodiment Policy Transfer
+227,Modeling Drivers’ Situational Awareness from Eye Gaze for Driving Assistance
+472,ThinkGrasp: A Vision-Language System for Strategic Part Grasping in Clutter
+636,LiDARGrid: Self-supervised 3D Opacity Grid from LiDAR for Scene Forecasting
+27,CtRL-Sim: Reactive and Controllable Driving Agents with Offline Reinforcement Learning
+532,T$^2$SQNet: A Recognition Model for Manipulating Partially Observed Transparent Tableware Objects
+359,Tokenize the World into Object-level Knowledge to Address Long-tail Events in Autonomous Driving
+162,A Planar-Symmetric SO(3) Representation for Learning Grasp Detection
+681,MBC: Multi-Brain Collaborative Control for Quadruped Robots
+220,Uncertainty-Aware Decision Transformer for Stochastic Driving Environments
+9,Evaluating Real-World Robot Manipulation Policies in Simulation
+358,TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning
+725,Gameplay Filters: Robust Zero-Shot Safety through Adversarial Imagination
+243,PoliFormer: Scaling On-Policy RL with Transformers Results in Masterful Navigators
+67,Hint-AD: Holistically Aligned Interpretability in End-to-End Autonomous Driving
+155,Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks
+176,CoViS-Net: A Cooperative Visual Spatial Foundation Model for Multi-Robot Applications
+439,Reasoning Grasping via Multimodal Large Language Model
+270,Object-Centric Dexterous Manipulation from Human Motion Data
+336,KOI: Accelerating Online Imitation Learning via Hybrid Key-state Guidance
+440,Mobility VLA: Multimodal Instruction Navigation with Long-Context VLMs and Topological Graphs
+693,MaIL: Improving Imitation Learning with Selective State Space Models
+258,Multi-Strategy Deployment-Time Learning and Adaptation for Navigation under Uncertainty
+401,ANAVI: Audio Noise Awareness using Visual of Indoor environments for NAVIgation
+46,Dreamitate: Real-World Visuomotor Policy Learning via Video Generation
+694,VLM-Grounder: A VLM Agent for Zero-Shot 3D Visual Grounding
+70,Detect Everything with Few Examples
+138,RoboPoint: A Vision-Language Model for Spatial Affordance Prediction in Robotics
+656,Action Space Design in Reinforcement Learning for Robot Motor Skills
+367,Teaching Robots with Show and Tell: Using Foundation Models to Synthesize Robot Policies from Language and Visual Demonstration
+476,Not All Errors Are Made Equal: A Regret Metric for Detecting System-level Trajectory Prediction Failures
+724,Mobile ALOHA: Learning Bimanual Mobile Manipulation using Low-Cost Whole-Body Teleoperation
+280,FlowRetrieval: Flow-Guided Data Retrieval for Few-Shot Imitation Learning
+519,Environment Curriculum Generation via Large Language Models
+126,Event3DGS: Event-Based 3D Gaussian Splatting for High-Speed Robot Egomotion
+196,TaMMa: Target-driven Multi-subscene Mobile Manipulation
+484,What Matters in Range View 3D Object Detection
+604,Scaling Robot Policy Learning via Zero-Shot Labeling with Foundation Models
+664,ViPER: Visibility-based Pursuit-Evasion via Reinforcement Learning
+332,BiGym: A Demo-Driven Mobile Bi-Manual Manipulation Benchmark
+44,Visual Manipulation with Legs
+437,Learning Long-Horizon Action Dependencies in Sampling-Based Bilevel Planning
+682,Context-Aware Replanning with Pre-Explored Semantic Map for Object Navigation
+393,SoloParkour: Constrained Reinforcement Learning for Visual Locomotion from Privileged Experience
+335,Multi-Task Interactive Robot Fleet Learning with Visual World Models
+187,WoCoCo: Learning Whole-Body Humanoid Control with Sequential Contacts
+464,Enhancing Visual Domain Robustness in Behaviour Cloning via Saliency-Guided Augmentation
+94,SonicSense: Object Perception from In-Hand Acoustic Vibration
+264,VoxAct-B: Voxel-Based Acting and Stabilizing Policy for Bimanual Manipulation
+458,Bridging the Sim-to-Real Gap from the Information Bottleneck Perspective
+423,Neural Inverse Source Problem
+405,DiffusionSeeder: Seeding Motion Optimization with Diffusion for Rapid Motion Planning
+381,ResPilot: Teleoperated Finger Gaiting via Gaussian Process Residual Learning
+570,Learning to Look: Seeking Information for Decision Making via Policy Factorization
+98,Dynamics-Guided Diffusion Model for Sensor-less Robot Manipulator Design
+674,"Scaling Cross-Embodied Learning: One Policy for Manipulation, Navigation, Locomotion and Aviation"
+605,Simple Masked Training Strategies Yield Control Policies That Are Robust to Sensor Failure
+409,"Velociraptor: Leveraging Visual Foundation Models for Label-Free, Risk-Aware Off-Road Navigation"
+42,Neural Attention Field: Emerging Point Relevance in 3D Scenes for One-Shot Dexterous Grasping
+199,Physically Embodied Gaussian Splatting: A Visually Learnt and Physically Grounded 3D Representation for Robotics
+442,KOROL: Learning Visualizable Object Feature with Koopman Operator Rollout for Manipulation
+593,What Makes Pre-Trained Visual Representations Successful for Robust Manipulation?
+256,Leveraging Mutual Information for Asymmetric Learning under Partial Observability
+202,ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation
+582,Fleet Supervisor Allocation: A Submodular Maximization Approach
+678,Guided Reinforcement Learning for Robust Multi-Contact Loco-Manipulation
+16,Generalized Animal Imitator: Agile Locomotion with Versatile Motion Prior
+269,Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation
+388,Handling Long-Term Safety and Uncertainty in Safe Reinforcement Learning
+592,DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models
+325,AnyRotate: Gravity-Invariant In-Hand Object Rotation with Sim-to-Real Touch
+173,"Splat-MOVER: Multi-Stage, Open-Vocabulary Robotic Manipulation via Editable Gaussian Splatting"
+712,Safe Bayesian Optimization for the Control of High-Dimensional Embodied Systems
+459,RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation
+404,Learning Performance-oriented Control Barrier Functions Under Complex Safety Constraints and Limited Actuation
+688,Autonomous Improvement of Instruction Following Skills via Foundation Models
+539,Monocular Event-Based Vision for Obstacle Avoidance with a Quadrotor
+384,MimicTouch: Leveraging Multi-modal Human Tactile Demonstrations for Contact-rich Manipulation
+513,GenDP: 3D Semantic Fields for Category-Level Generalizable Diffusion Policy
+455,UBSoft: A Simulation Platform for Robotic Skill Learning in Unbounded Soft Environments
+13,ACE: A Cross-platform and visual-Exoskeletons System for Low-Cost Dexterous Teleoperation
+104,Automated Creation of Digital Cousins for Robust Policy Learning
+640,D$^3$RoMa: Disparity Diffusion-based Depth Sensing for Material-Agnostic Robotic Manipulation
+329,Distribution Discrepancy and Feature Heterogeneity for Active 3D Object Detection
+396,Online Transfer and Adaptation of Tactile Skill: A Teleoperation Framework
+669,Steering Your Generalists: Improving Robotic Foundation Models via Value Guidance
+354,In-Flight Attitude Control of a Quadruped using Deep Reinforcement Learning
+75,GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs
+546,EquiGraspFlow: SE(3)-Equivariant 6-DoF Grasp Pose Generative Flows
+145,Promptable Closed-loop Traffic Simulation
+655,DexGraspNet 2.0: Learning Generative Dexterous Grasping in Large-scale Synthetic Cluttered Scenes
+510,Learning Differentiable Tensegrity Dynamics using Graph Neural Networks
+456,IMAGINATION POLICY: Using Generative Point Cloud Models for Learning Manipulation Policies
+639,Bimanual Dexterity for Complex Tasks
+720,RP1M: A Large-Scale Motion Dataset for Piano Playing with Bi-Manual Dexterous Robot Hands
+548,Continuously Improving Mobile Manipulation with Autonomous Real-World RL
+142,Twisting Lids Off with Two Hands
+346,PointPatchRL - Masked Reconstruction Improves Reinforcement Learning on Point Clouds
+230,UMI-on-Legs: Making Manipulation Policies Mobile with Manipulation-Centric Whole-body Controllers
+182,FREA: Feasibility-Guided Generation of Safety-Critical Scenarios with Reasonable Adversariality
+222,FlowBotHD: History-Aware Diffuser Handling Ambiguities in Articulated Objects Manipulation
+616,Accelerating Visual Sparse-Reward Learning with Latent Nearest-Demonstration-Guided Explorations
+696,Learning Transparent Reward Models via Unsupervised Feature Selection
+62,Manipulate-Anything: Automating Real-World Robots using Vision-Language Models
+136,Robot See Robot Do: Part-Centric Feature Fields for Visual Imitation of Articulated Objects
+545,Genetic Algorithm for Curriculum Design in Multi-Agent Reinforcement Learning
+291,Multi-agent Reinforcement Learning with Hybrid Action Space for Free Gait Motion Planning of Hexapod Robots
+701,Trajectory Improvement and Reward Learning from Comparative Language Feedback
+23,Get a Grip: Multi-Finger Grasp Evaluation at Scale Enables Robust Sim-to-Real Transfer
+638,Learning Robotic Locomotion Affordances and Photorealistic Simulators from Human-Captured Data
+217,EscIRL: Evolving Self-Contrastive IRL for Trajectory Prediction in Autonomous Driving
+184,One Model to Drift Them All: Physics-Informed Conditional Diffusion Model for Driving at the Limits
+306,Provably Safe Online Multi-Agent Navigation in Unknown Environments

@@ -25,7 +25,7 @@ if __name__ == '__main__':
         '--get_agreement', default=False, action='store_true', help='if included, download publication agreement')
     parser.add_argument(
         '--get_spotlight', default=False, action='store_true', help='if included, download poster spotlight')
-    parser.add_argument('--baseurl', default='https://api.openreview.net')
+    parser.add_argument('--baseurl', default='https://api1.openreview.net')
     parser.add_argument('--username', default='', help='defaults to empty string (guest user)')
     parser.add_argument('--password', default='', help='defaults to empty string (guest user)')
 
@@ -37,10 +37,22 @@ if __name__ == '__main__':
         baseurl=args.baseurl,
         username=args.username,
         password=args.password)
+        
+    # Test connection
+    print(f"Connected to OpenReview API at {args.baseurl}")
+    print(f"Using conference invitation: {CONFERENCE_INVITATION}")
+
 
     # Retrieves the meta data.
     submissions = openreview.tools.iterget_notes(
         client, invitation=CONFERENCE_INVITATION)
+        
+    # Convert the iterator to a list first
+    submissions_list = list(submissions)
+
+    # Now you can print the length
+    print(f"number of submissions: {len(submissions_list)}")
+        
     submissions_by_forum = {n.forum: n for n in submissions}
     metadata = []
     for forum in submissions_by_forum:
@@ -51,7 +63,8 @@ if __name__ == '__main__':
         }
         # only keeps the accepted papers
         venue = submission_content['venue']
-        if venue in ['CoRL 2024 Poster', 'CoRL 2024 Oral']:
+        if venue in ['CoRL 2024 Conference']:
+        #if venue in ['CoRL 2024 Poster', 'CoRL 2024 Oral']:
             metadata.append(forum_metadata)
 
     outdir = os.path.join(outdir, CONFERENCE_NAME)
