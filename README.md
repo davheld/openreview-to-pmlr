@@ -12,8 +12,9 @@ python download_camera_ready_papers.py
 You need to change CONFERENCE_NAME and CONFERENCE_INVITATION in the code for your own conference.
 
 ## To download the publication agreements (and find papers with missing publication agreements):
-
+```
 python download_publication_agreements.py
+```
 
 ## To generate the bibtex file for PMLR:
 ```
