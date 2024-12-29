@@ -11,11 +11,9 @@ python download_camera_ready_papers.py
 ```
 You need to change CONFERENCE_NAME and CONFERENCE_INVITATION in the code for your own conference.
 
-## To remove mp4 files from the supplementary zip files (note: this was not needed for CORL 2023-2024 because we did not allow authors to submit supplementary files):
-```
-python del_mp4_from_supp_zip.py -i <path_with_zip_files> -o <output_path>
-```
-Note that the input zip files will not be altered. All the modified zip files are written to the output_path.
+## To download the publication agreements (and find papers with missing publication agreements):
+
+python download_publication_agreements.py
 
 ## To generate the bibtex file for PMLR:
 ```
@@ -25,3 +23,8 @@ The input_path should point to path_to_download when you ran download_corl_2023.
 
 You need to change CONFERENCE_NAME and ORAL_PAPER_IDS in the code for your own conference. In this file, I assumed that there were two sections: orals and posters. If your conference has only one section or more than two sections, please search for "is_poster" in the code and modify accordingly.
 
+## OLD: To remove mp4 files from the supplementary zip files (note: this was not needed for CORL 2023-2024 because we did not allow authors to submit supplementary files):
+```
+python del_mp4_from_supp_zip.py -i <path_with_zip_files> -o <output_path>
+```
+Note that the input zip files will not be altered. All the modified zip files are written to the output_path.
