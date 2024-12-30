@@ -20,7 +20,7 @@ python download_publication_agreements.py
 ```
 python create_pmlr_bib.py -i <input_path> -o <output_path>
 ```
-The input_path should point to path_to_download when you ran download_corl_2023.py. The output_path will contain the corl23.bib and all the files that are renamed based on PMLR's requirement.
+The input_path should point to the folder of pdfs that was generated when you ran download_camera_ready_papers.py. The output_path will contain the corl.bib and all the files that are renamed based on PMLR's requirement.
 
 You need to change CONFERENCE_NAME and ORAL_PAPER_IDS in the code for your own conference. In this file, I assumed that there were two sections: orals and posters. If your conference has only one section or more than two sections, please search for "is_poster" in the code and modify accordingly.
 
