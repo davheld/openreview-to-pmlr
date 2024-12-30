@@ -4,57 +4,26 @@ import json
 import shutil
 
 # Modifies the following CONSTANTS based on your need.
-CONFERENCE_NAME = 'corl23'
+CONFERENCE_NAME = 'corl24'
+CONFERENCE_YEAR = '24'
 ORAL_PAPER_IDS = [
-    "VH6WIPF4Sj",
-    "Rb0nGIt_kh5",
-    "q0VAoefCI2",
-    "flyQ0v8cgC",
-    "b1tl3aOt2R2",
-    "WWiKBdcpNd",
-    "SgTPdyehXMA",
-    "DYPOvNot5F",
-    "69y5fzvaAT",
-    "3gh9hf3R6x",
-    "6kSohKYYTn0",
-    "uo937r5eTE",
-    "k-Fg8JDQmc",
-    "a0mFRgadGO",
-    "XEw-cnNsr6",
-    "C5MQUlzhVjQ",
-    "770xKAHeFS",
-    "-K7-1WvKO3F",
-    "pLCQkMojXI",
-    "nKWQnYkkwX",
-    "JkFeyEC6VXV",
-    "EvuAJ0wD98",
-    "4ZK8ODNyFXx",
-    "xQx1O7WXSA",
-    "hRZ1YjDZmTo",
-    "bIvIUNH9VQ",
-    "E2vL12SwO1",
-    "9_8LF30mOC",
-    "86aMPJn6hX9F",
-    "0hPkttoGAf",
-    "wMpOMO0Ss7a",
-    "pw-OTIYrGa",
-    "fa7FzDjhzs9",
 ]
+PDF_FOLDER = 'corl2024_cameraready_pdfs'
 
 # Customizes the header of the bibtex based on your conference information.
 def write_proceeding_info():
     bibtex_str = '@Proceedings{CoRL-2023,\n'
-    bibtex_str += '\tbooktitle = {Proceedings of The 7th Conference on Robot Learning},\n'
+    bibtex_str += '\tbooktitle = {Proceedings of The 8th Conference on Robot Learning},\n'
     bibtex_str += '\tname = {Conference on Robot Learning},\n'
     bibtex_str += '\tshortname = {CoRL},\n'
-    bibtex_str += '\teditor = {Tan, Jie and Toussaint, Marc and Darvish, Kourosh},\n'
+    bibtex_str += '\tyear = {2024},\n'
+    bibtex_str += '\teditor = {Agrawal, Pulkit and Kroemer, Oliver and Burgard, Wolfram},\n'
     bibtex_str += '\tvolume = {},\n'
-    bibtex_str += '\tyear = {2023},\n'
-    bibtex_str += '\tstart = {2023-11-06},\n'
-    bibtex_str += '\tend = {2023-11-09},\n'
-    bibtex_str += '\tconference_url = {https://www.corl2023.org/},\n'
-    bibtex_str += '\taddress = {Atlanta, USA},\n'
-    bibtex_str += '\tconference_number={7},\n'
+    bibtex_str += '\tstart = {2024-11-06},\n'
+    bibtex_str += '\tend = {2024-11-09},\n'
+    bibtex_str += '\taddress = {Munich, Germany},\n'
+    bibtex_str += '\tconference_url = {https://2024.corl.org/},\n'
+    bibtex_str += '\tconference_number={8},\n'
     bibtex_str += '}\n\n'
     return bibtex_str
 
@@ -65,7 +34,10 @@ def create_identifiers(all_metadata):
     collision_id_count_dict = {}
 
     for i, metadata in zip(range(len(all_metadata)), all_metadata):
-        identifier = (metadata['submission_content']['authors'][0].split(' ')[-1]).lower() + '23'
+        #print(metadata['submission_content'].get('authors', 'No authors field'))
+        authors = metadata['submission_content'].get('authors', {}).get('value', [])
+        identifier = (authors[0].split(' ')[-1]).lower() + CONFERENCE_YEAR
+        #identifier = (metadata['submission_content']['authors'][0].split(' ')[-1]).lower() + '23'
         paper_title = metadata['submission_content']['title']
         if identifier in unique_id_set:
             print('conflict found!', i, identifier, paper_title)
@@ -91,15 +63,17 @@ def create_paper_bibtex(indir, outdir, identifier, metadata, is_poster, page_sta
     '''Creates a bibtex entry for one paper.'''
     title = metadata['submission_content']['title']
     abstract = metadata['submission_content']['abstract']
-    paper_length = get_pdf_page_length(os.path.join(indir, metadata['forum']+'.pdf'))
+    submission_number = metadata['submission_number']
+    paper_length = get_pdf_page_length(os.path.join(PDF_FOLDER, 'Paper' + str(submission_number) + '.pdf'))
     authors = metadata['submission_content']['authors']
     openreview = metadata['forum']
     bibtex_str = serialize_to_bibtex(identifier, title, abstract, authors, page_start, paper_length, openreview, is_poster)
-    rename_files(indir, outdir, metadata, identifier)
+    rename_files(indir, outdir, metadata, identifier, submission_number)
     return bibtex_str, page_start + paper_length
 
 def format_author_names(authors):
     author_names = ''
+    authors = authors['value']
     for name in authors:
         splitted_name = name.split(' ')
         last_name = splitted_name[-1]
@@ -109,37 +83,48 @@ def format_author_names(authors):
             author_names += ' and '
     return author_names
 
-def rename_files(indir, outdir, metadata, bibtex_str):
+def rename_files(indir, outdir, metadata, bibtex_str, submission_number):
     '''Renames the files from OpenReview-id.pdf to identifier.pdf.'''
-    src_folder = indir
+    src_folder = PDF_FOLDER
     dest_folder = outdir
-    pdf_name = metadata['forum'] + '.pdf'
+    pdf_name = 'Paper' + str(submission_number) + '.pdf'
     new_name = bibtex_str + '.pdf'
     print('rename pdf: {}->{}'.format(pdf_name, new_name))
 
     shutil.copyfile(os.path.join(src_folder, pdf_name), os.path.join(dest_folder, new_name))
 
-    if 'supplementary_material' in metadata['submission_content'].keys() and metadata['submission_content']['supplementary_material'] != "":
-        if not metadata['submission_content']['supplementary_material'].endswith('.zip'):
-            print (metadata['submission_content']['supplementary_material'])
-            raise ValueError
-        supplementary_name = metadata['forum'] + '_supp.zip'
-        new_supp_name = bibtex_str + '-supp.zip'
-        print('rename supp: {}->{}'.format(supplementary_name, new_supp_name))
-        shutil.copyfile(os.path.join(src_folder, supplementary_name), os.path.join(dest_folder, new_supp_name))
+    # if 'supplementary_material' in metadata['submission_content'].keys() and metadata['submission_content']['supplementary_material'] != "":
+    #    if not metadata['submission_content']['supplementary_material']['value'].endswith('.zip'):
+    #        print (metadata['submission_content']['supplementary_material'])
+    #        raise ValueError
+    #   supplementary_name = metadata['forum'] + '_supp.zip'
+    #    new_supp_name = bibtex_str + '-supp.zip'
+    #    print('rename supp: {}->{}'.format(supplementary_name, new_supp_name))
+    #    shutil.copyfile(os.path.join(src_folder, supplementary_name), os.path.join(dest_folder, new_supp_name))
 
 def serialize_to_bibtex(identifier, title, abstract, authors, page_start, paper_length, openreview, is_poster):
     bibtex_str = '@InProceedings{'
     bibtex_str += identifier + ',\n'
-    bibtex_str += '\ttitle = {' + title + '},\n'
-    if is_poster:
-        bibtex_str += '\tsection = {Poster},\n'
-    else:
-        bibtex_str += '\tsection = {Oral},\n'
+    bibtex_str += '\ttitle = {' + title['value'] + '},\n'
+    #if is_poster:
+    #    bibtex_str += '\tsection = {Poster},\n'
+    #else:
+    #    bibtex_str += '\tsection = {Oral},\n'
     bibtex_str += '\tauthor = {' + format_author_names(authors) + '},\n'
     bibtex_str += '\tpages = {' + str(page_start) + '-' + str(page_start + paper_length - 1) + '},\n'
     bibtex_str += '\topenreview = {' + openreview + '},\n'
-    bibtex_str += '\tabstract = {' + abstract + '}\n'
+    bibtex_str += '\tabstract = {' + abstract['value'] + '}\n'
+    
+    # Add software link if available
+    software_link = metadata['submission_content'].get('code')
+    if software_link and software_link.get('value'):
+        bibtex_str += '\tsoftware = {' + software_link['value'] + '},\n'    
+    
+    # Add video link if available
+    video_link = metadata['submission_content'].get('video')
+    if video_link and video_link.get('value'):
+        bibtex_str += '\tvideo = {' + video_link['value'] + '},\n'
+
     bibtex_str += '}\n\n'
     return bibtex_str
 
