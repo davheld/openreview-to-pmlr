@@ -7,6 +7,36 @@ import shutil
 CONFERENCE_NAME = 'corl24'
 CONFERENCE_YEAR = '24'
 ORAL_PAPER_IDS = [
+    "ypaYtV1CoG",
+    "xeFKtSXPMd",
+    "wD2kUVLT1g",
+    "ty1cqzTtUv",
+    "rRpmVq6yHv",
+    "lt0Yf8Wh5O",
+    "fNBbEgcfwO",
+    "fIj88Tn3fc",
+    "fC0wWeXsVm",
+    "dsxmR6lYlg",
+    "ctzBccpolr",
+    "cT2N3p1AcE",
+    "XopATjibyz",
+    "Uaaj4MaVIQ",
+    "URj5TQTAXM",
+    "Si2krRESZb",
+    "N5IS6DzBmL",
+    "LiwdXkMsDv",
+    "Ke5xrnBFAR",
+    "KdVLK0Wo5z",
+    "F0rWEID2gb",
+    "Czs2xH9114",
+    "Bq4XOaU4sV",
+    "AuJnXGq3AL",
+    "AEq0onGrN2",
+    "9aZ4ehSTRc",
+    "8LPXeGhhbH",
+    "3bcujpPikC",
+    "2LLu3gavF1",
+    "0gDbaEtVrd",
 ]
 PDF_FOLDER = 'corl2024_cameraready_pdfs'
 
@@ -106,10 +136,10 @@ def serialize_to_bibtex(identifier, title, abstract, authors, page_start, paper_
     bibtex_str = '@InProceedings{'
     bibtex_str += identifier + ',\n'
     bibtex_str += '\ttitle = {' + title['value'] + '},\n'
-    #if is_poster:
-    #    bibtex_str += '\tsection = {Poster},\n'
-    #else:
-    #    bibtex_str += '\tsection = {Oral},\n'
+    if is_poster:
+       bibtex_str += '\tsection = {Poster},\n'
+    else:
+       bibtex_str += '\tsection = {Oral},\n'
     bibtex_str += '\tauthor = {' + format_author_names(authors) + '},\n'
     bibtex_str += '\tpages = {' + str(page_start) + '-' + str(page_start + paper_length - 1) + '},\n'
     bibtex_str += '\topenreview = {' + openreview + '},\n'
@@ -146,6 +176,7 @@ def split_metadata_and_identifiers(all_metadata, all_identifiers):
     poster_identifiers = []
     for metadata, identifier in zip(all_metadata, all_identifiers):
         forum_id = metadata['forum']
+        #print(forum_id)
         if forum_id in ORAL_PAPER_IDS:
             oral_metadata.append(metadata)
             oral_identifiers.append(identifier)

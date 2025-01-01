@@ -88,10 +88,9 @@ if __name__ == "__main__":
             'submission_number': submission_number
         }
         # only keeps the accepted papers
-        #venue = submission_content['venue']
+        venue = submission_content['venue']
         # if venue in ['CoRL 2024 Poster', 'CoRL 2024 Oral']:
         metadata.append(forum_metadata)
-
 
     outdir = os.path.join(outdir, CONFERENCE_NAME)
     if not os.path.exists(outdir):
