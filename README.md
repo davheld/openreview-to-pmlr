@@ -26,6 +26,8 @@ You need to change CONFERENCE_NAME and ORAL_PAPER_IDS in the code for your own c
 
 How do you get the ORAL_PAPER_IDS?  I recommend to ask the OpenReview Chair for this.  In 2024, the OpenReview Chair (Krishna Murthy) wrote: I used a script that was extremely tailored to this year's format (i.e., read from the spreadsheet that the PCs created, and the data dump from OR that one of our previous scripts generated). So, I'm not sure that it'd translate to next year, but here's the script just in case (this script can be found in get_forum_ids_of_orals.py)
 
+After this, you need to run convert-latex.py on the output bibtex to convert the Unicode accents to LaTeX accents, such as \'e for an acute accent on e.
+
 ## OLD: To remove mp4 files from the supplementary zip files (note: this was not needed for CORL 2023-2024 because we did not allow authors to submit supplementary files):
 ```
 python del_mp4_from_supp_zip.py -i <path_with_zip_files> -o <output_path>
