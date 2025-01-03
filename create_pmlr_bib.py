@@ -42,7 +42,7 @@ PDF_FOLDER = 'corl2024_cameraready_pdfs'
 
 # Customizes the header of the bibtex based on your conference information.
 def write_proceeding_info():
-    bibtex_str = '@Proceedings{CoRL-2023,\n'
+    bibtex_str = '@Proceedings{CoRL-2024,\n'
     bibtex_str += '\tbooktitle = {Proceedings of The 8th Conference on Robot Learning},\n'
     bibtex_str += '\tname = {Conference on Robot Learning},\n'
     bibtex_str += '\tshortname = {CoRL},\n'
@@ -169,7 +169,7 @@ def read_paper_metadata(filename):
     return paper_metadata
 
 def split_metadata_and_identifiers(all_metadata, all_identifiers):
-    '''Splits the metadata and identifiers based on sections. In CoRL 2023, there are two sections: oral and poster.'''
+    '''Splits the metadata and identifiers based on sections. In CoRL 2024, there are two sections: oral and poster.'''
     oral_metadata = []
     poster_metadata = []
     oral_identifiers = []
