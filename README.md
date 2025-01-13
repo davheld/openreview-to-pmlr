@@ -28,6 +28,13 @@ How do you get the ORAL_PAPER_IDS?  I recommend to ask the OpenReview Chair for 
 
 After this, you need to run convert-latex.py on the output bibtex to convert the Unicode accents to LaTeX accents, such as \'e for an acute accent on e.
 
+Finally, this apparently didn't fix all of the formatting issues so you should run this script: https://github.com/mlresearch/pmlrpy
+
+Last, you can look at the bibtex from last year to make any other formatting changes:
+https://proceedings.mlr.press/v270/
+
+Good luck!
+
 ## OLD: To remove mp4 files from the supplementary zip files (note: this was not needed for CORL 2023-2024 because we did not allow authors to submit supplementary files):
 ```
 python del_mp4_from_supp_zip.py -i <path_with_zip_files> -o <output_path>
